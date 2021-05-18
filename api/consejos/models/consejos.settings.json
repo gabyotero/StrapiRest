@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "consejos",
+  "info": {
+    "name": "consejos"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Titulo": {
+      "type": "string"
+    },
+    "imagen": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

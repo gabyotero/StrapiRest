@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/consejos",
+      "handler": "consejos.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/consejos/count",
+      "handler": "consejos.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/consejos/:id",
+      "handler": "consejos.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/consejos",
+      "handler": "consejos.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/consejos/:id",
+      "handler": "consejos.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/consejos/:id",
+      "handler": "consejos.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
